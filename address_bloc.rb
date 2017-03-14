@@ -1,4 +1,5 @@
 require_relative 'controllers/menu_controller'
+puts Dir.pwd
 
 menu = MenuController.new
 
