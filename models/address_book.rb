@@ -47,6 +47,21 @@ class AddressBook
     return nil
   end
 
+  def iterative_search(name)
+    current = 0
+    upper = entries.length - 1
+
+    while current <= upper
+      current_name = entries[current].name
+      if name == current_name
+        return entries[current]
+      else
+        current += 1
+    end
+  end
+    return nil
+  end
+
   def remove_entry(name, phone_number, email)
     delete_entry = nil
 
